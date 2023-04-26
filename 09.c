@@ -17,8 +17,6 @@ Saida: total
 
 #include <stdio.h>
 
-int valida_opcao();
-
 int main(){
     
     int quantidade=0, decisao=0;
@@ -38,8 +36,11 @@ int main(){
         printf("    [4]   -    Finalizar Compra\n");
         printf("--------------------------------------------------\n");
         
+        do{
+        printf("\n    Escolha um indice: ");
+        scanf("%d", &decisao);
+        }while(decisao != 1 && decisao != 2 && decisao != 3 && decisao !=4);
 
-        decisao = valida_opcao();
         printf("\n");
 
         switch(decisao){
@@ -49,6 +50,7 @@ int main(){
             printf("    Quantidade: ");
             scanf("%d", &quantidade);
             total+= quantidade * 5.00;
+            printf("    Carrinho de Compras = R$%.2f\n", total);            
         break;
 
         case 2:
@@ -56,6 +58,7 @@ int main(){
             printf("    Quantidade: ");
             scanf("%d", &quantidade);
             total+= quantidade * 1.00;
+            printf("    Carrinho de Compras = R$%.2f\n", total);            
         break;
 
         case 3:
@@ -63,6 +66,7 @@ int main(){
             printf("    Quantidade: ");
             scanf("%d", &quantidade);
             total+= quantidade * 4.00;
+            printf("    Carrinho de Compras = R$%.2f\n", total);
         break;
     }
 
@@ -73,14 +77,4 @@ int main(){
     printf("--------------------------------------------------\n");
 
     return 0;
-}
-
-int valida_opcao(){
-    int n=0;
-    do{
-        printf("\n    Escolha um indice: ");
-        scanf("%d", &n);
-    }while(n != 1 && n != 2 && n != 3 && n !=4);
-
-    return n;
 }

@@ -20,7 +20,7 @@ Saida: Mostrar o enesimo termo ...
 
 int main(){
 
-    unsigned long long int  fibonacci=0, termo1=0, termo2=0,  swap=0;
+    unsigned long long int  fibonacci=0, termo1=0, termo2=0;
     int numero=0, i=0;
 
     printf("--------------------------------------------------\n");
@@ -35,15 +35,9 @@ int main(){
     
     termo2=1;
     for(i=0;i<numero;i++){
-        swap = fibonacci;
-        printf("%llu ", swap);
         termo1 = termo2;
-        printf("%llu ", termo1);
-        termo2 = swap;
-        printf("%llu ", termo2);
+        termo2 = fibonacci;
         fibonacci =+ termo1 + termo2;
-        printf("%llu ", fibonacci);
-        printf("\n");
     }
 
     printf("O %d termo da sequencia Fibonacci = %llu",numero, fibonacci);
@@ -53,3 +47,5 @@ int main(){
 
     return 0;
 }
+
+

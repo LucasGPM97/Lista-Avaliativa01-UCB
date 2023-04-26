@@ -6,8 +6,7 @@ que são múltiplos de 3 ou 5.
 Objetivo: somar todos numeros multiplos de 3 ou 5
 
 Saida : total da soma
-soma multiplo 3 = 1501500
-Soma5: 2502500
+
  */
 
 // Lucas Gabriel Pereira de Menezes

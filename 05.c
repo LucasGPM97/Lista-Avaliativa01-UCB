@@ -8,7 +8,6 @@ Entrada: numero positivo
 Objetivo: achar os divisores do numero
 
 Saida: os divisores do numero informado.
-
 */
 
 // Lucas Gabriel Pereira de Menezes

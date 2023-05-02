@@ -33,7 +33,7 @@ int main(){
 
     for(i=1;i<=numero;i++){
         if(numero%i == 0){
-            printf("%d,", i);
+            printf("%d\t", i);
         }
     }
 
